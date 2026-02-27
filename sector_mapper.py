@@ -1,57 +1,87 @@
-# sector_mapper.py
-
 import pandas as pd
 import logging
 
 logger = logging.getLogger(__name__)
 
-# This dictionary maps the industry names from the NSE file to the Fyers index symbols
-SECTOR_INDEX_MAP = {
-    "FINANCIAL SERVICES": "NSE:NIFTYFINSRV-INDEX",
-    "IT": "NSE:NIFTYIT-INDEX",
-    "OIL & GAS": "NSE:NIFTYENERGY-INDEX",
-    "AUTOMOBILE": "NSE:NIFTYAUTO-INDEX",
-    "FMCG": "NSE:NIFTYFMCG-INDEX",
-    "HEALTHCARE": "NSE:NIFTYPHARMA-INDEX",
-    "METALS": "NSE:NIFTYMETAL-INDEX",
-    "CONSUMER DURABLES": "NSE:NIFTYCONSUMER-INDEX",
+# --- CORRECTED FYERS SECTOR SYMBOLS ---
+SECTOR_SYMBOL_MAP = {
+    "Nifty Auto": "NSE:NIFTYAUTO-INDEX",
+    "Automobile and Auto Components": "NSE:NIFTYAUTO-INDEX",
+    
+    "Nifty Bank": "NSE:NIFTYBANK-INDEX",
+    
+    "Nifty Consumer Durables": "NSE:NIFTY_CONSUMER_DURABLES-INDEX",
+    "Consumer Durables": "NSE:NIFTY_CONSUMER_DURABLES-INDEX",
+    
+    "Nifty Financial Services": "NSE:FINNIFTY-INDEX",
+    "Financial Services": "NSE:FINNIFTY-INDEX",
+    
+    "Nifty FMCG": "NSE:NIFTYFMCG-INDEX",
+    "Fast Moving Consumer Goods": "NSE:NIFTYFMCG-INDEX",
+    
+    "Nifty IT": "NSE:NIFTYIT-INDEX",
+    "Information Technology": "NSE:NIFTYIT-INDEX",
+    
+    "Nifty Media": "NSE:NIFTYMEDIA-INDEX",
+    "Media Entertainment & Publication": "NSE:NIFTYMEDIA-INDEX",
+    
+    "Nifty Metal": "NSE:NIFTYMETAL-INDEX",
+    "Metals & Mining": "NSE:NIFTYMETAL-INDEX",
+    
+    "Nifty Pharma": "NSE:NIFTYPHARMA-INDEX",
+    "Healthcare": "NSE:NIFTYPHARMA-INDEX",
+    
+    "Nifty PSU Bank": "NSE:NIFTYPSUBANK-INDEX",
+    
+    "Nifty Private Bank": "NSE:NIFTYPVTBANK-INDEX",
+    
+    "Nifty Realty": "NSE:NIFTYREALTY-INDEX",
+    "Realty": "NSE:NIFTYREALTY-INDEX",
+    "Construction": "NSE:NIFTYREALTY-INDEX", # Closest proxy
+    
+    "Nifty Oil & Gas": "NSE:NIFTY_OIL_AND_GAS-INDEX",
+    "Oil Gas & Consumable Fuels": "NSE:NIFTY_OIL_AND_GAS-INDEX",
+    
+    "Power": "NSE:NIFTYENERGY-INDEX", # Mapping Power to Energy Index
+    "Capital Goods": "NSE:NIFTYINFRA-INDEX", # Mapping Cap Goods to Infra as proxy or closest available
+    "Chemicals": "NSE:NIFTYCOMMODITIES-INDEX", # Proxy
+    "Services": "NSE:NIFTYSERVSECTOR-INDEX",
     # Add other mappings as needed
 }
 
-_stock_to_sector_map = None
+class SectorMapper:
+    def __init__(self, filepath="nifty200_symbols.csv"):
+        self.mapping = self._create_mapping(filepath)
+        if self.mapping:
+            logger.info("Successfully created stock-to-sector mapping for NIFTY 200.")
 
-def _initialize_map():
-    """
-    Loads the NIFTY 200 constituents file and creates a mapping
-    from each stock symbol to its sector index symbol.
-    """
-    global _stock_to_sector_map
-    try:
-        df = pd.read_csv("nifty200_raw.csv") # Assumes the raw file from universe_builder is present
-        _stock_to_sector_map = {}
-        for index, row in df.iterrows():
-            symbol = row['Symbol']
-            industry = row['Industry'].upper()
-            # Find the matching index for the industry
-            for sector_keyword, index_symbol in SECTOR_INDEX_MAP.items():
-                if sector_keyword in industry:
-                    _stock_to_sector_map[f"NSE:{symbol}-EQ"] = index_symbol
-                    break
-        logger.info("Successfully created stock-to-sector mapping for NIFTY 200.")
-    except FileNotFoundError:
-        logger.critical("FATAL: nifty200_raw.csv not found. Please run universe_builder.py first.")
-        _stock_to_sector_map = {}
-    except Exception as e:
-        logger.error(f"Error initializing sector map: {e}", exc_info=True)
-        _stock_to_sector_map = {}
+    def _create_mapping(self, filepath):
+        try:
+            df = pd.read_csv(filepath)
+            # Create a dictionary mapping stock symbol to its sector
+            # This logic handles variations like INFY vs INFY.NS
+            mapping = {
+                f"NSE:{row['Symbol']}-EQ": row['Industry'] 
+                for index, row in df.iterrows()
+            }
+            return mapping
+        except FileNotFoundError:
+            logger.critical(f"FATAL: Sector mapping file not found at {filepath}")
+            return None
+        except Exception as e:
+            logger.error(f"Error creating sector mapping: {e}", exc_info=True)
+            return None
 
+    def get_sector_for_stock(self, stock_symbol):
+        """
+        Gets the sector name for a given stock symbol (e.g., 'NSE:INFY-EQ').
+        """
+        if self.mapping is None: return None
+        return self.mapping.get(stock_symbol)
 
-def get_sector_index_for_stock(fyers_stock_symbol):
-    """
-    Returns the sector index for a given stock symbol.
-    """
-    global _stock_to_sector_map
-    if _stock_to_sector_map is None:
-        _initialize_map()
-    
-    return _stock_to_sector_map.get(fyers_stock_symbol)
+    def get_fyers_sector_symbol(self, sector_name):
+        """
+        Gets the correct Fyers API symbol for a given sector name.
+        """
+        if sector_name is None: return None
+        return SECTOR_SYMBOL_MAP.get(sector_name)

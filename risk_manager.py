@@ -1,80 +1,121 @@
 import math
+import logging
 
-# In risk_manager.py, replace this function
+logger = logging.getLogger(__name__)
 
-def calculate_trade_details(account_balance, risk_percentage, entry_price, stop_loss_price):
+# --- Instrument Configuration ---
+# NOTE: These are INDEX lot sizes. Equity risk is calculated differently.
+LOT_SIZES = {
+    "NIFTY": 65,
+    "BANKNIFTY": 30
+}
+# --------------------------------
+
+def calculate_scalping_trade(account_balance, risk_percentage, stop_loss_points, index_name="NIFTY"):
     """
-    Calculates the position size and validates a trade based on risk parameters.
+    Calculates the number of lots for an options scalping trade based on a 
+    fixed stop-loss in points on the underlying index.
     """
-    # This check now returns a consistent error format
-    if entry_price <= stop_loss_price:
+    if stop_loss_points <= 0:
+        return {"is_trade_valid": False, "reason": "Stop loss points must be positive."}
+
+    if index_name not in LOT_SIZES:
+        return {"is_trade_valid": False, "reason": f"No lot size configured for index: {index_name}"}
+
+    lot_size = LOT_SIZES[index_name]
+    
+    # Calculate risk parameters
+    max_risk_per_trade = account_balance * (risk_percentage / 100)
+    risk_per_lot = stop_loss_points * lot_size
+    
+    if risk_per_lot <= 0:
+        return {"is_trade_valid": False, "reason": "Calculated risk per lot is zero or negative."}
+
+    # Calculate ideal number of lots
+    try:
+        max_lots = math.floor(max_risk_per_trade / risk_per_lot)
+    except Exception as e:
+        logger.error(f"Error during lot calculation: {e}")
+        return {"is_trade_valid": False, "reason": "Error during lot calculation."}
+
+    # Check if we can afford even 1 lot
+    if max_lots < 1:
         return {
             "is_trade_valid": False,
-            "reason": f"Entry price ({entry_price}) must be > stop-loss price ({stop_loss_price})."
+            "reason": f"Risk is too high. Stop-loss of {stop_loss_points:.2f} points (₹{risk_per_lot:.2f}/lot) exceeds max risk of ₹{max_risk_per_trade:.2f} even for 1 lot."
         }
 
-    max_risk_per_trade_rupees = account_balance * (risk_percentage / 100.0)
-    risk_per_share_rupees = entry_price - stop_loss_price
+    # For scalping, we often just take 1 lot if it's within budget
+    lots_to_trade = 1 # Default to 1 lot for this strategy
+    
+    if lots_to_trade > max_lots:
+         return {
+            "is_trade_valid": False,
+            "reason": f"Calculated lots ({lots_to_trade}) exceeds max allowed lots ({max_lots}) for risk parameters."
+        }
 
-    if risk_per_share_rupees <= 0:
-        return {"is_trade_valid": False, "reason": "Risk per share is zero or negative."}
+    return {
+        "is_trade_valid": True,
+        "lots": lots_to_trade,
+        "quantity": lots_to_trade * lot_size,
+        "max_risk_allowed": max_risk_per_trade,
+        "risk_per_lot": risk_per_lot
+    }
 
-    quantity = max_risk_per_trade_rupees / risk_per_share_rupees
-    position_size = math.floor(quantity)
+def calculate_equity_trade(account_balance, risk_percentage, entry_price, stop_loss_price):
+    """
+    Calculates the position size (number of shares) for an equity trade.
+    THIS IS THE PATCH: Now correctly handles short positions.
+    """
+    
+    # --- THIS IS THE FIX ---
+    # Use absolute difference to handle both long and short trades
+    risk_per_share = abs(entry_price - stop_loss_price)
+    # -----------------------
 
-    if position_size <= 0:
+    if risk_per_share <= 0:
+        return {"is_trade_valid": False, "reason": "Risk per share is zero. Check entry/stop prices."}
+        
+    if entry_price > stop_loss_price: # Long trade
+        pass # Standard logic
+    elif entry_price < stop_loss_price: # Short trade
+        pass # Logic is now handled by abs()
+    else:
+        return {"is_trade_valid": False, "reason": "Entry and Stop-loss are the same price."}
+
+    max_risk_per_trade = account_balance * (risk_percentage / 100)
+    
+    # Check if the trade is even possible
+    if risk_per_share > max_risk_per_trade:
         return {
             "is_trade_valid": False,
-            "reason": "Risk is too high for the given stop-loss. Calculated position size is zero."
-            }
+            "reason": f"Risk per share (₹{risk_per_share:.2f}) is greater than max allowed risk (₹{max_risk_per_trade:.2f})."
+        }
 
-    actual_capital_at_risk = position_size * risk_per_share_rupees
+    # Calculate position size
+    try:
+        position_size = math.floor(max_risk_per_trade / risk_per_share)
+    except Exception as e:
+        logger.error(f"Error during position size calculation: {e}")
+        return {"is_trade_valid": False, "reason": "Error during calculation."}
+
+    # Check if we can buy at least 1 share
+    if position_size < 1:
+        return {"is_trade_valid": False, "reason": "Calculated position size is less than 1 share."}
+        
+    # Check if we have enough capital to make the purchase
+    total_cost = entry_price * position_size
+    if total_cost > account_balance:
+        # We can't afford the ideal size, so we down-size to what we can afford
+        position_size = math.floor(account_balance / entry_price)
+        if position_size < 1:
+            return {"is_trade_valid": False, "reason": "Not enough capital for 1 share."}
+
     return {
         "is_trade_valid": True,
         "position_size": position_size,
-        "max_risk_per_trade_rupees": round(max_risk_per_trade_rupees, 2),
-        "actual_capital_at_risk_rupees": round(actual_capital_at_risk, 2),
-        "entry_price": entry_price,
-        "stop_loss_price": stop_loss_price
+        "risk_per_share": risk_per_share,
+        "total_risk": risk_per_share * position_size,
+        "total_cost": entry_price * position_size
     }
-# --- This is how we test our module ---
-if __name__ == '__main__':
-    print("Testing Risk Manager...")
 
-    # --- Scenario 1: A valid trade ---
-    print("\n--- SCENARIO 1: Valid Trade ---")
-    account_capital = 40000  # Our hard-earned ₹40,000
-    risk_percent = 1.0       # The 1% Rule
-    option_entry_price = 100.0
-    option_stop_loss = 80.0
-
-    trade1 = calculate_trade_details(account_capital, risk_percent, option_entry_price, option_stop_loss)
-    print(trade1)
-
-
-    # --- Scenario 2: Risk is too high for the stop-loss ---
-    print("\n--- SCENARIO 2: Risk Too High ---")
-    account_capital = 40000
-    risk_percent = 1.0
-    option_entry_price = 100.0
-    option_stop_loss = 98.0  # Very tight stop-loss
-
-    trade2 = calculate_trade_details(account_capital, risk_percent, option_entry_price, option_stop_loss)
-    print(trade2)
-
-    # --- Scenario 3: Invalid prices ---
-    print("\n--- SCENARIO 3: Invalid Prices ---")
-    trade3 = calculate_trade_details(40000, 1.0, 100.0, 105.0)
-    print(trade3)
-
-    # --- Scenario 4: Abort Trade - Risk per share exceeds max risk ---
-    print("\n--- SCENARIO 4: Abort Trade ---")
-    account_capital = 40000
-    risk_percent = 1.0
-    option_entry_price = 500.0  # An expensive option
-    option_stop_loss = 50.0   # A very wide stop-loss
-
-    trade4 = calculate_trade_details(account_capital, risk_percent, option_entry_price, option_stop_loss)
-    print(trade4)
-
-    

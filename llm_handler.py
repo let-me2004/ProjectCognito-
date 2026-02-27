@@ -1,114 +1,108 @@
-import google.generativeai as genai
-from config import GOOGLE_API_KEY
-import json
+# llm_handler.py - FINAL DEFINITIVE VERSION (Groq High-Speed)
+
+from groq import Groq
+import config
 import logging
+import json
+import time
 
 logger = logging.getLogger(__name__)
-# --- CHANGE 1: Configure the Gemini API with the correct key ---
+
+# --- Groq Client Initialization ---
 try:
-    genai.configure(api_key=GOOGLE_API_KEY)
+    if not config.GROQ_API_KEY:
+        raise ValueError("GROQ_API_KEY not found in .env file.")
+    
+    client = Groq(api_key=config.GROQ_API_KEY)
+    
+    # Using a current, stable, and fast model from Groq
+    MODEL_NAME = "meta-llama/llama-4-scout-17b-16e-instruct" 
+
+    logger.info(f"Groq client initialized successfully for model: {MODEL_NAME}")
+
 except Exception as e:
-    print(f"Fatal Error: Could not configure Google AI. Check your API key. Error: {e}")
-    exit()
-
-# --- CHANGE 2: Use a current model and set the generation config for JSON output ---
-generation_config = {
-  "response_mime_type": "application/json",
-}
-model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash-latest",
-    generation_config=generation_config
-)
-
-# In llm_handler.py, replace this function
-
-# In llm_handler.py, replace this function
+    logger.critical(f"Failed to initialize Groq client: {e}", exc_info=True)
+    client = None
+# --------------------------------
 
 def get_market_analysis(technical_data, news_headlines):
     """
-    Takes market data, gets analysis from a specialized LLM persona, and sanitizes the output.
+    Takes market data, gets analysis from the Groq-powered 'Cognito' persona,
+    and sanitizes the output.
     """
-    # This is our new, advanced prompt with persona, rules, and examples.
+    if client is None:
+        logger.error("Groq client not initialized. Cannot get analysis.")
+        return None
+
+    if not news_headlines:
+        news_headlines = "No specific news found."
+
     prompt = f"""
     **Persona:**
-    You are 'Cognito', a senior quantitative sentiment analyst for the Indian stock market. Your sole purpose is to analyze real-time data to provide a decisive, short-term (1-4 hour) directional bias for the NIFTY 50 index. You are data-driven, precise, and avoid ambiguity. You understand that in intraday trading, "Neutral" is often a missed opportunity, so you only use it when data is perfectly contradictory.
+    You are 'Cognito', a senior quantitative sentiment analyst for the Indian stock market. Your sole purpose is to analyze real-time data to provide a decisive, short-term directional bias. You are data-driven and precise. Only use "Neutral" when data is perfectly contradictory.
 
     **Rules of Analysis:**
-    1.  **Negative Bias:** Market panic is faster than market greed. Give slightly more weight to negative news (inflation, geopolitical tension, bad corporate results) than positive news.
-    2.  **High-Impact Keywords:** Any mention of "RBI," "inflation surprise," "policy change," or "geopolitical conflict" significantly increases the confidence of your analysis.
-    3.  **Technicals as Context:** Use the provided technical data as context. A strong bullish technical reading can temper a bearish news outlook, and vice-versa.
-    4.  **Output Format:** You MUST return your analysis ONLY as a single, clean JSON object. Do not include any other text, greetings, or explanations.
-
-    **Examples of Correct Analysis:**
-
-    * **Example 1:**
-        * **Input Data:** "Techs: NIFTY at 24500. RSI is 45. EMA(10) is below EMA(20). | News: RBI announces unexpected interest rate hike to combat rising inflation."
-        * **Correct Output:**
-            ```json
-            {{
-              "outlook": "Strongly Bearish",
-              "confidence": 0.9,
-              "reasoning": "Unexpected RBI rate hike is a major negative catalyst, confirmed by weak technicals.",
-              "suggested_action": "Favor Put options"
-            }}
-            ```
-
-    * **Example 2:**
-        * **Input Data:** "Techs: NIFTY at 24800. RSI is 65. Price is above all key moving averages. | News: Government announces major infrastructure spending package. Global markets are positive."
-        * **Correct Output:**
-            ```json
-            {{
-              "outlook": "Bullish",
-              "confidence": 0.75,
-              "reasoning": "Positive fiscal stimulus and strong technicals suggest continued upward momentum.",
-              "suggested_action": "Favor Call options"
-            }}
-            ```
+    1.  **Negative Bias:** Give slightly more weight to negative news.
+    2.  **Output Format:** You MUST return your analysis ONLY as a single, clean JSON object with the keys "outlook" (String: "Bullish", "Bearish", or "Neutral") and "confidence" (Float: 0.0 to 1.0).
 
     ---
     **Live Data for Analysis:**
 
-    Now, using the persona, rules, and examples above, analyze the following live data:
-
     * **Technical Snapshot:** "{technical_data}"
     * **Key News Headlines:** "{news_headlines}"
 
-    Provide your output now.
+    Provide your JSON output now.
     """
 
     try:
-        response = model.generate_content(prompt)
-        analysis_dict = json.loads(response.text)
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
+            model=MODEL_NAME,
+            temperature=0.1,
+            response_format={"type": "json_object"},
+        )
+        
+        response_content = chat_completion.choices[0].message.content
+        analysis_dict = json.loads(response_content)
 
-        # Data Sanitization Protocol (from our previous fix)
+        # --- Data Sanitization Protocol ---
         if 'confidence' in analysis_dict:
             try:
                 analysis_dict['confidence'] = float(analysis_dict['confidence'])
             except (ValueError, TypeError):
-                logger.warning(f"LLM returned invalid confidence value. Defaulting to 0.0. Value: {analysis_dict['confidence']}")
+                logger.warning(f"Groq returned invalid confidence value. Defaulting to 0.0.")
                 analysis_dict['confidence'] = 0.0
         else:
-            logger.warning("LLM response was missing 'confidence' key. Defaulting to 0.0.")
+            logger.warning("Groq response was missing 'confidence' key. Defaulting to 0.0.")
             analysis_dict['confidence'] = 0.0
 
         return analysis_dict
 
     except Exception as e:
-        logger.error(f"Error getting or parsing analysis from LLM: {e}", exc_info=True)
+        logger.error(f"Error getting or parsing analysis from Groq: {e}", exc_info=True)
         return None
-# --- This is how we test our module ---
+
+# --- Standalone Test Block ---
 if __name__ == '__main__':
-    print("Testing LLM Handler...")
-    # Create sample data
-    sample_tech_data = "NIFTY at 23500. RSI is 65. Approaching resistance at 23600."
-    sample_news = "Global markets are down 1%. Major IT firm announces weak quarterly forecast."
-
-    # Get the analysis
-    analysis = get_market_analysis(sample_tech_data, sample_news)
-
-    if analysis:
-        print("Successfully received analysis from LLM:")
-        # Pretty-print the JSON
-        print(json.dumps(analysis, indent=2))
+    # --- THIS IS THE FIX ---
+    import logger_setup 
+    # --------------------
+    logger_setup.setup_logger()
+    logger.info("--- Standalone Groq Handler Test ---")
+    
+    if not config.GROQ_API_KEY:
+        logger.critical("Cannot run test: GROQ_API_KEY not set in .env file.")
     else:
-        print("Failed to get analysis.")
+        test_techs = "NIFTY at 25100. RSI is 68. Above all key EMAs."
+        test_news = "Major IT firm reports stellar earnings, raises guidance for the year."
+        
+        logger.info("Testing with positive data...")
+        analysis = get_market_analysis(test_techs, test_news)
+        
+        if analysis:
+            logger.info(f"--> Result: {json.dumps(analysis, indent=2)}")
+        else:
+            logger.error("--> Failed to get analysis.")
+

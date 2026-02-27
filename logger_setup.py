@@ -1,36 +1,32 @@
-# logger_setup.py
-
 import logging
 import sys
 
 def setup_logger():
     """
-    Configures a logger to output to both the console and a file.
+    Sets up a simple, robust logger that prints INFO and above to the console.
     """
     # Get the root logger
     logger = logging.getLogger()
-    logger.setLevel(logging.INFO) # Set the lowest level of messages to handle
+    
+    # Prevent duplicate handlers if this is called multiple times
+    if logger.hasHandlers():
+        for handler in logger.handlers[:]:
+            logger.removeHandler(handler)
 
-    # Create a formatter
+    logger.setLevel(logging.INFO) # Set the minimum level for the logger
+
+    # --- Console Handler ---
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(logging.INFO) # Minimum level for console
+    
+    # --- Formatter ---
     formatter = logging.Formatter(
-        '%(asctime)s - %(levelname)s - %(module)s - %(message)s',
+        '%(asctime)s - %(levelname)s - [%(name)s] - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
     )
-
-    # Create a handler to write to the console (stdout)
-    stdout_handler = logging.StreamHandler(sys.stdout)
-    stdout_handler.setLevel(logging.INFO)
-    stdout_handler.setFormatter(formatter)
-
-    # Create a handler to write to a file
-    file_handler = logging.FileHandler('cognito_trader.log')
-    file_handler.setLevel(logging.INFO)
-    file_handler.setFormatter(formatter)
-
-    # Add the handlers to the logger
-    # Check if handlers have already been added to prevent duplication
-    if not logger.handlers:
-        logger.addHandler(stdout_handler)
-        logger.addHandler(file_handler)
+    console_handler.setFormatter(formatter)
+    
+    # Add the handler to the logger
+    logger.addHandler(console_handler)
     
     return logger
