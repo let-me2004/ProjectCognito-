@@ -1,0 +1,1387 @@
+Configuration loaded.
+2026-02-24 14:22:43 - INFO - [root] - ====== ORB Debit Spread Scalper Initializing ======
+2026-02-24 14:22:44 - INFO - [fyers_client] - Authentication successful for 8KJDAMRL0T-100 using saved token.
+2026-02-24 14:22:44 - INFO - [paper_trader] - Restored 4 active positions from disk.
+2026-02-24 14:22:44 - INFO - [paper_trader] - Trade log will be saved to: trade_log.csv
+2026-02-24 14:22:44 - INFO - [paper_trader] - Positions will be saved to: paper_positions_scalper.json
+2026-02-24 14:22:44 - INFO - [websocket] - Websocket connected
+2026-02-24 14:22:46 - INFO - [fyers_client] - WebSocket Connection Opened. Subscribing to symbols...
+2026-02-24 14:22:47 - INFO - [fyers_client] - Subscribed to: ['NSE:NIFTY50-INDEX', 'NSE:NIFTYBANK-INDEX']
+2026-02-24 14:22:47 - INFO - [fyers_client] - WebSocket connection process initiated...
+2026-02-24 14:22:47 - INFO - [root] - --- Initialization Complete. ORB Scalper is live. ---
+2026-02-24 14:22:47 - INFO - [root] - --- Trading window: 09:15:00 - 23:59:00 ---
+2026-02-24 14:22:47 - INFO - [root] - --- Max positions: 4 | Profit target: 15.0% ---
+2026-02-24 14:22:47 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:22:47 - INFO - [root] - ==================================================
+2026-02-24 14:22:47 - INFO - [root] - [14:22:47] Analysis cycle | Positions: 4/4
+2026-02-24 14:22:47 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:22:47 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:22:47 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:22:47 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:22:47 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:22:47 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:22:47 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:22:47 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:23:17 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:23:17 - INFO - [root] - ==================================================
+2026-02-24 14:23:17 - INFO - [root] - [14:23:17] Analysis cycle | Positions: 4/4
+2026-02-24 14:23:17 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:23:17 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:23:17 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:23:17 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:23:17 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:23:17 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:23:17 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:23:17 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:23:48 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:23:48 - INFO - [root] - ==================================================
+2026-02-24 14:23:48 - INFO - [root] - [14:23:48] Analysis cycle | Positions: 4/4
+2026-02-24 14:23:48 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:23:48 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:23:48 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:23:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:23:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:23:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:23:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:23:48 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:24:18 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:24:18 - INFO - [root] - ==================================================
+2026-02-24 14:24:18 - INFO - [root] - [14:24:18] Analysis cycle | Positions: 4/4
+2026-02-24 14:24:18 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:24:18 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:24:18 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:24:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:24:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:24:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:24:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:24:18 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:24:48 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:24:48 - INFO - [root] - ==================================================
+2026-02-24 14:24:48 - INFO - [root] - [14:24:48] Analysis cycle | Positions: 4/4
+2026-02-24 14:24:48 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:24:48 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:24:48 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:24:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:24:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:24:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:24:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:24:48 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:25:18 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:25:18 - INFO - [root] - ==================================================
+2026-02-24 14:25:18 - INFO - [root] - [14:25:18] Analysis cycle | Positions: 4/4
+2026-02-24 14:25:18 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:25:18 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:25:18 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:25:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:25:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:25:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:25:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:25:18 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:25:48 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:25:48 - INFO - [root] - ==================================================
+2026-02-24 14:25:48 - INFO - [root] - [14:25:48] Analysis cycle | Positions: 4/4
+2026-02-24 14:25:48 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:25:48 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:25:48 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:25:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:25:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:25:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:25:48 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:25:48 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:26:18 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:26:18 - INFO - [root] - ==================================================
+2026-02-24 14:26:18 - INFO - [root] - [14:26:18] Analysis cycle | Positions: 4/4
+2026-02-24 14:26:18 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:26:18 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:26:18 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:26:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:26:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:26:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:26:18 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:26:18 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:26:49 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:26:49 - INFO - [root] - ==================================================
+2026-02-24 14:26:49 - INFO - [root] - [14:26:49] Analysis cycle | Positions: 4/4
+2026-02-24 14:26:49 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:26:49 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:26:49 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:26:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:26:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:26:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:26:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:26:49 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:27:19 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:27:19 - INFO - [root] - ==================================================
+2026-02-24 14:27:19 - INFO - [root] - [14:27:19] Analysis cycle | Positions: 4/4
+2026-02-24 14:27:19 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:27:19 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:27:19 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:27:19 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:27:19 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:27:19 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:27:19 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:27:19 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:27:49 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:27:49 - INFO - [root] - ==================================================
+2026-02-24 14:27:49 - INFO - [root] - [14:27:49] Analysis cycle | Positions: 4/4
+2026-02-24 14:27:49 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:27:49 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:27:49 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:27:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:27:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:27:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:27:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:27:49 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:28:19 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:28:19 - INFO - [root] - ==================================================
+2026-02-24 14:28:19 - INFO - [root] - [14:28:19] Analysis cycle | Positions: 4/4
+2026-02-24 14:28:19 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:28:19 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:28:19 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:28:19 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:28:19 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:28:19 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:28:19 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:28:19 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:28:49 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:28:49 - INFO - [root] - ==================================================
+2026-02-24 14:28:49 - INFO - [root] - [14:28:49] Analysis cycle | Positions: 4/4
+2026-02-24 14:28:49 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:28:49 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:28:49 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:28:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:28:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:28:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:28:49 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:28:49 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:29:20 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:29:20 - INFO - [root] - ==================================================
+2026-02-24 14:29:20 - INFO - [root] - [14:29:20] Analysis cycle | Positions: 4/4
+2026-02-24 14:29:20 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:29:20 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:29:20 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:29:20 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:29:20 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:29:20 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:29:20 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:29:20 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:29:50 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:29:50 - INFO - [root] - ==================================================
+2026-02-24 14:29:50 - INFO - [root] - [14:29:50] Analysis cycle | Positions: 4/4
+2026-02-24 14:29:50 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:29:50 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:29:50 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:29:50 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:29:50 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:29:50 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:29:50 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:29:50 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:30:20 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:30:20 - INFO - [root] - ==================================================
+2026-02-24 14:30:20 - INFO - [root] - [14:30:20] Analysis cycle | Positions: 4/4
+2026-02-24 14:30:20 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:30:20 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:30:20 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:30:20 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:30:20 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:30:20 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:30:20 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:30:20 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:30:50 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:30:50 - INFO - [root] - ==================================================
+2026-02-24 14:30:50 - INFO - [root] - [14:30:50] Analysis cycle | Positions: 4/4
+2026-02-24 14:30:50 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:30:50 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:30:51 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:30:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:30:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:30:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:30:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:30:51 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:31:21 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:31:21 - INFO - [root] - ==================================================
+2026-02-24 14:31:21 - INFO - [root] - [14:31:21] Analysis cycle | Positions: 4/4
+2026-02-24 14:31:21 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:31:21 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:31:21 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:31:21 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:31:21 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:31:21 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:31:21 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:31:21 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:31:51 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:31:51 - INFO - [root] - ==================================================
+2026-02-24 14:31:51 - INFO - [root] - [14:31:51] Analysis cycle | Positions: 4/4
+2026-02-24 14:31:51 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:31:51 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:31:51 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:31:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:31:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:31:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:31:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:31:51 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:32:21 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:32:21 - INFO - [root] - ==================================================
+2026-02-24 14:32:21 - INFO - [root] - [14:32:21] Analysis cycle | Positions: 4/4
+2026-02-24 14:32:21 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:32:21 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:32:21 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:32:21 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:32:21 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:32:21 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:32:21 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:32:21 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:32:51 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:32:51 - INFO - [root] - ==================================================
+2026-02-24 14:32:51 - INFO - [root] - [14:32:51] Analysis cycle | Positions: 4/4
+2026-02-24 14:32:51 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:32:51 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:32:51 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:32:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:32:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:32:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:32:51 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:32:51 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:33:22 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 4: expected str instance, int found
+2026-02-24 14:33:22 - INFO - [root] - ==================================================
+2026-02-24 14:33:22 - INFO - [root] - [14:33:22] Analysis cycle | Positions: 4/4
+2026-02-24 14:33:22 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:33:22 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:33:22 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:33:22 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25550PE (Qty: 65) | Entry: 20.85
+2026-02-24 14:33:22 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25500PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:33:22 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 17.65
+2026-02-24 14:33:22 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:33:22 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:33:52 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:33:52 - INFO - [root] - ==================================================
+2026-02-24 14:33:52 - INFO - [root] - [14:33:52] Analysis cycle | Positions: 1/4
+2026-02-24 14:33:52 - INFO - [orb_scalper_strategy] - [ORB] NIFTY: ORB Range = 25547.15 - 25641.80 (95 pts)
+2026-02-24 14:33:53 - INFO - [fyers_client] -    ...NIFTY spot price is 25398.05
+2026-02-24 14:33:53 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:33:53 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:33:53 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:33:53 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:33:54 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:33:54 - INFO - [fyers_client] -    ...NIFTY spot price is 25397.9
+2026-02-24 14:33:54 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:33:54 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:33:54 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:33:54 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:33:55 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:33:55 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@28.20 + SELL NSE:NIFTY26FEB25350PE@10.00
+2026-02-24 14:33:55 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:33:55 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:33:55 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:33:55 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:33:55 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:34:22 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:34:22 - INFO - [root] - ==================================================
+2026-02-24 14:34:22 - INFO - [root] - [14:34:22] Analysis cycle | Positions: 1/4
+2026-02-24 14:34:22 - INFO - [fyers_client] -    ...NIFTY spot price is 25396.95
+2026-02-24 14:34:22 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:34:22 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:34:23 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:34:23 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:34:23 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:34:23 - INFO - [fyers_client] -    ...NIFTY spot price is 25396
+2026-02-24 14:34:23 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:34:23 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:34:24 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:34:24 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:34:24 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:34:24 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@28.55 + SELL NSE:NIFTY26FEB25350PE@10.60
+2026-02-24 14:34:24 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:34:24 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:34:24 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:34:24 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:34:24 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:34:52 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:34:52 - INFO - [root] - ==================================================
+2026-02-24 14:34:52 - INFO - [root] - [14:34:52] Analysis cycle | Positions: 1/4
+2026-02-24 14:34:52 - INFO - [fyers_client] -    ...NIFTY spot price is 25396.2
+2026-02-24 14:34:52 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:34:52 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:34:53 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:34:53 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:34:53 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:34:53 - INFO - [fyers_client] -    ...NIFTY spot price is 25396.8
+2026-02-24 14:34:53 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:34:53 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:34:54 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:34:54 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:34:54 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:34:54 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@27.05 + SELL NSE:NIFTY26FEB25350PE@9.90
+2026-02-24 14:34:54 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:34:54 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:34:54 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:34:54 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:34:54 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:35:23 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:35:23 - INFO - [root] - ==================================================
+2026-02-24 14:35:23 - INFO - [root] - [14:35:23] Analysis cycle | Positions: 1/4
+2026-02-24 14:35:23 - INFO - [fyers_client] -    ...NIFTY spot price is 25401.1
+2026-02-24 14:35:23 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:35:23 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:35:23 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:35:23 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:35:24 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:35:24 - INFO - [fyers_client] -    ...NIFTY spot price is 25401.3
+2026-02-24 14:35:24 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:35:24 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:35:25 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:35:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:35:25 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:35:25 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@22.95 + SELL NSE:NIFTY26FEB25350PE@7.40
+2026-02-24 14:35:25 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:35:25 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:35:25 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:35:25 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:35:25 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:35:53 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:35:53 - INFO - [root] - ==================================================
+2026-02-24 14:35:53 - INFO - [root] - [14:35:53] Analysis cycle | Positions: 1/4
+2026-02-24 14:35:53 - INFO - [fyers_client] -    ...NIFTY spot price is 25407.1
+2026-02-24 14:35:53 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:35:53 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:35:54 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:35:54 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:35:54 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:35:54 - INFO - [fyers_client] -    ...NIFTY spot price is 25407
+2026-02-24 14:35:54 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:35:54 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:35:55 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:35:55 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:35:55 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:35:55 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@20.55 + SELL NSE:NIFTY26FEB25350PE@6.65
+2026-02-24 14:35:55 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:35:55 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:35:55 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:35:55 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:35:55 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:36:23 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:36:23 - INFO - [root] - ==================================================
+2026-02-24 14:36:23 - INFO - [root] - [14:36:23] Analysis cycle | Positions: 1/4
+2026-02-24 14:36:23 - INFO - [fyers_client] -    ...NIFTY spot price is 25404.4
+2026-02-24 14:36:23 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:36:23 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:36:24 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:36:24 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:36:24 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:36:24 - INFO - [fyers_client] -    ...NIFTY spot price is 25405.05
+2026-02-24 14:36:24 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:36:24 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:36:25 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:36:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:36:25 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:36:25 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@23.30 + SELL NSE:NIFTY26FEB25350PE@7.55
+2026-02-24 14:36:25 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:36:25 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:36:25 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:36:25 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:36:25 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:36:53 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:36:53 - INFO - [root] - ==================================================
+2026-02-24 14:36:53 - INFO - [root] - [14:36:53] Analysis cycle | Positions: 1/4
+2026-02-24 14:36:53 - INFO - [fyers_client] -    ...NIFTY spot price is 25407.75
+2026-02-24 14:36:53 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:36:53 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:36:54 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:36:54 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:36:54 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:36:54 - INFO - [fyers_client] -    ...NIFTY spot price is 25407.9
+2026-02-24 14:36:54 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:36:54 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:36:55 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:36:55 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:36:55 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:36:55 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@20.65 + SELL NSE:NIFTY26FEB25350PE@7.10
+2026-02-24 14:36:55 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:36:55 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:36:55 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:36:55 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:36:55 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:37:24 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:37:24 - INFO - [root] - ==================================================
+2026-02-24 14:37:24 - INFO - [root] - [14:37:24] Analysis cycle | Positions: 1/4
+2026-02-24 14:37:24 - INFO - [fyers_client] -    ...NIFTY spot price is 25408.3
+2026-02-24 14:37:24 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:37:24 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:37:24 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:37:24 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:37:25 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:37:25 - INFO - [fyers_client] -    ...NIFTY spot price is 25408.3
+2026-02-24 14:37:25 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:37:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:37:25 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:37:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:37:26 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:37:26 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@20.95 + SELL NSE:NIFTY26FEB25350PE@7.05
+2026-02-24 14:37:26 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:37:26 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:37:26 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:37:26 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:37:26 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:37:54 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:37:54 - INFO - [root] - ==================================================
+2026-02-24 14:37:54 - INFO - [root] - [14:37:54] Analysis cycle | Positions: 1/4
+2026-02-24 14:37:54 - INFO - [fyers_client] -    ...NIFTY spot price is 25410.15
+2026-02-24 14:37:54 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:37:54 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:37:55 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:37:55 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:37:55 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:37:55 - INFO - [fyers_client] -    ...NIFTY spot price is 25410.05
+2026-02-24 14:37:55 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:37:55 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:37:56 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:37:56 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:37:56 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:37:56 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@18.60 + SELL NSE:NIFTY26FEB25350PE@6.50
+2026-02-24 14:37:56 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:37:56 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:37:56 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:37:56 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:37:56 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:38:24 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:38:24 - INFO - [root] - ==================================================
+2026-02-24 14:38:24 - INFO - [root] - [14:38:24] Analysis cycle | Positions: 1/4
+2026-02-24 14:38:25 - INFO - [fyers_client] -    ...NIFTY spot price is 25414.05
+2026-02-24 14:38:25 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:38:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:38:25 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:38:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:38:25 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:38:26 - INFO - [fyers_client] -    ...NIFTY spot price is 25414.5
+2026-02-24 14:38:26 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:38:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:38:26 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:38:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:38:26 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:38:26 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@14.70 + SELL NSE:NIFTY26FEB25350PE@4.60
+2026-02-24 14:38:26 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:38:26 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:38:26 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:38:26 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:38:26 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:38:54 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:38:54 - INFO - [root] - ==================================================
+2026-02-24 14:38:54 - INFO - [root] - [14:38:54] Analysis cycle | Positions: 1/4
+2026-02-24 14:38:55 - INFO - [fyers_client] -    ...NIFTY spot price is 25421.25
+2026-02-24 14:38:55 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:38:55 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:38:55 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:38:55 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:38:56 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:38:56 - INFO - [fyers_client] -    ...NIFTY spot price is 25420.05
+2026-02-24 14:38:56 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:38:56 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:38:56 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:38:56 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:38:57 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:38:57 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@13.65 + SELL NSE:NIFTY26FEB25350PE@4.20
+2026-02-24 14:38:57 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:38:57 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:38:57 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:38:57 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:38:57 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:39:24 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:39:24 - INFO - [root] - ==================================================
+2026-02-24 14:39:24 - INFO - [root] - [14:39:24] Analysis cycle | Positions: 1/4
+2026-02-24 14:39:25 - INFO - [fyers_client] -    ...NIFTY spot price is 25419.5
+2026-02-24 14:39:25 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:39:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:39:25 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:39:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:39:26 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:39:26 - INFO - [fyers_client] -    ...NIFTY spot price is 25419.6
+2026-02-24 14:39:26 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:39:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:39:26 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:39:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:39:27 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:39:27 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@14.45 + SELL NSE:NIFTY26FEB25350PE@4.45
+2026-02-24 14:39:27 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:39:27 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:39:27 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:39:27 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:39:27 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:39:54 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:39:54 - INFO - [root] - ==================================================
+2026-02-24 14:39:54 - INFO - [root] - [14:39:54] Analysis cycle | Positions: 1/4
+2026-02-24 14:39:55 - INFO - [fyers_client] -    ...NIFTY spot price is 25418.15
+2026-02-24 14:39:55 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:39:55 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:39:55 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:39:55 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:39:56 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:39:56 - INFO - [fyers_client] -    ...NIFTY spot price is 25417.85
+2026-02-24 14:39:56 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:39:56 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:39:56 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:39:56 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:39:57 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:39:57 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@17.45 + SELL NSE:NIFTY26FEB25350PE@5.40
+2026-02-24 14:39:57 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:39:57 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:39:57 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:39:57 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:39:57 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:40:25 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:40:25 - INFO - [root] - ==================================================
+2026-02-24 14:40:25 - INFO - [root] - [14:40:25] Analysis cycle | Positions: 1/4
+2026-02-24 14:40:25 - INFO - [fyers_client] -    ...NIFTY spot price is 25419.85
+2026-02-24 14:40:25 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:40:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:40:25 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:40:25 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:40:26 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:40:26 - INFO - [fyers_client] -    ...NIFTY spot price is 25420.15
+2026-02-24 14:40:26 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:40:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:40:26 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:40:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:40:27 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:40:27 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@16.70 + SELL NSE:NIFTY26FEB25350PE@5.25
+2026-02-24 14:40:27 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:40:27 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:40:27 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:40:27 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:40:27 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:40:55 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:40:55 - INFO - [root] - ==================================================
+2026-02-24 14:40:55 - INFO - [root] - [14:40:55] Analysis cycle | Positions: 1/4
+2026-02-24 14:40:56 - INFO - [fyers_client] -    ...NIFTY spot price is 25418
+2026-02-24 14:40:56 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:40:56 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:40:56 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:40:56 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:40:56 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:40:57 - INFO - [fyers_client] -    ...NIFTY spot price is 25417.85
+2026-02-24 14:40:57 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:40:57 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:40:57 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:40:57 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:40:57 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:40:57 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@16.45 + SELL NSE:NIFTY26FEB25350PE@4.80
+2026-02-24 14:40:57 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:40:57 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:40:57 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:40:57 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:40:57 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:41:25 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:41:25 - INFO - [root] - ==================================================
+2026-02-24 14:41:25 - INFO - [root] - [14:41:25] Analysis cycle | Positions: 1/4
+2026-02-24 14:41:26 - INFO - [fyers_client] -    ...NIFTY spot price is 25417.6
+2026-02-24 14:41:26 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:41:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:41:26 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:41:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:41:27 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:41:27 - INFO - [fyers_client] -    ...NIFTY spot price is 25417.7
+2026-02-24 14:41:27 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:41:27 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:41:27 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:41:27 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:41:28 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:41:28 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@14.95 + SELL NSE:NIFTY26FEB25350PE@4.25
+2026-02-24 14:41:28 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:41:28 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:41:28 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:41:28 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:41:28 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:41:56 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:41:56 - INFO - [root] - ==================================================
+2026-02-24 14:41:56 - INFO - [root] - [14:41:56] Analysis cycle | Positions: 1/4
+2026-02-24 14:41:56 - INFO - [fyers_client] -    ...NIFTY spot price is 25418
+2026-02-24 14:41:56 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:41:56 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:41:56 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:41:56 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:41:57 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:41:57 - INFO - [fyers_client] -    ...NIFTY spot price is 25416.7
+2026-02-24 14:41:57 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:41:57 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:41:57 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:41:57 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:41:58 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:41:58 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@14.90 + SELL NSE:NIFTY26FEB25350PE@3.95
+2026-02-24 14:41:58 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:41:58 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:41:58 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:41:58 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:41:58 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:42:26 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:42:26 - INFO - [root] - ==================================================
+2026-02-24 14:42:26 - INFO - [root] - [14:42:26] Analysis cycle | Positions: 1/4
+2026-02-24 14:42:26 - INFO - [fyers_client] -    ...NIFTY spot price is 25415.3
+2026-02-24 14:42:26 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:42:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:42:26 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:42:26 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:42:27 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:42:27 - INFO - [fyers_client] -    ...NIFTY spot price is 25415.45
+2026-02-24 14:42:27 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:42:27 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:42:28 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:42:28 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:42:28 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:42:28 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@14.65 + SELL NSE:NIFTY26FEB25350PE@3.80
+2026-02-24 14:42:28 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:42:28 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:42:28 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:42:28 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:42:28 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:42:56 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:42:56 - INFO - [root] - ==================================================
+2026-02-24 14:42:56 - INFO - [root] - [14:42:56] Analysis cycle | Positions: 1/4
+2026-02-24 14:42:57 - INFO - [fyers_client] -    ...NIFTY spot price is 25416.2
+2026-02-24 14:42:57 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:42:57 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:42:57 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:42:57 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:42:57 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:42:58 - INFO - [fyers_client] -    ...NIFTY spot price is 25415.7
+2026-02-24 14:42:58 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:42:58 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:42:58 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:42:58 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:42:58 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:42:58 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@13.40 + SELL NSE:NIFTY26FEB25350PE@3.35
+2026-02-24 14:42:58 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:42:58 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:42:58 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:42:58 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:42:58 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:43:26 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:43:26 - INFO - [root] - ==================================================
+2026-02-24 14:43:26 - INFO - [root] - [14:43:26] Analysis cycle | Positions: 1/4
+2026-02-24 14:43:27 - INFO - [fyers_client] -    ...NIFTY spot price is 25414.9
+2026-02-24 14:43:27 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:43:27 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:43:27 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:43:27 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:43:28 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:43:28 - INFO - [fyers_client] -    ...NIFTY spot price is 25412.55
+2026-02-24 14:43:28 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:43:28 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:43:28 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:43:28 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:43:29 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:43:29 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@15.55 + SELL NSE:NIFTY26FEB25350PE@3.80
+2026-02-24 14:43:29 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:43:29 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:43:29 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:43:29 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:43:29 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:43:57 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:43:57 - INFO - [root] - ==================================================
+2026-02-24 14:43:57 - INFO - [root] - [14:43:57] Analysis cycle | Positions: 1/4
+2026-02-24 14:43:57 - INFO - [fyers_client] -    ...NIFTY spot price is 25405
+2026-02-24 14:43:57 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:43:57 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:43:58 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:43:58 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:43:58 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:43:59 - INFO - [fyers_client] -    ...NIFTY spot price is 25403.85
+2026-02-24 14:43:59 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:43:59 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:43:59 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:43:59 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:43:59 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:43:59 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@20.20 + SELL NSE:NIFTY26FEB25350PE@5.65
+2026-02-24 14:43:59 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:43:59 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:43:59 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:43:59 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:43:59 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:44:27 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:44:27 - INFO - [root] - ==================================================
+2026-02-24 14:44:27 - INFO - [root] - [14:44:27] Analysis cycle | Positions: 1/4
+2026-02-24 14:44:27 - INFO - [fyers_client] -    ...NIFTY spot price is 25392.75
+2026-02-24 14:44:27 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:44:27 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:44:28 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:44:28 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:44:28 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:44:29 - INFO - [fyers_client] -    ...NIFTY spot price is 25392.55
+2026-02-24 14:44:29 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:44:29 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:44:29 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:44:29 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:44:29 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:44:29 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@22.35 + SELL NSE:NIFTY26FEB25350PE@6.25
+2026-02-24 14:44:29 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:44:29 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:44:29 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:44:29 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:44:29 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:44:57 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:44:57 - INFO - [root] - ==================================================
+2026-02-24 14:44:57 - INFO - [root] - [14:44:57] Analysis cycle | Positions: 1/4
+2026-02-24 14:44:57 - INFO - [fyers_client] -    ...NIFTY spot price is 25382.85
+2026-02-24 14:44:57 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:44:57 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:44:58 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:44:58 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:44:58 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:44:59 - INFO - [fyers_client] -    ...NIFTY spot price is 25382.25
+2026-02-24 14:44:59 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:44:59 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:44:59 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:44:59 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:44:59 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:44:59 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@26.45 + SELL NSE:NIFTY26FEB25350PE@7.80
+2026-02-24 14:44:59 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:44:59 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:44:59 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:44:59 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 16.60
+2026-02-24 14:44:59 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:45:27 - INFO - [root] - ==================================================
+2026-02-24 14:45:27 - INFO - [root] - [14:45:27] Analysis cycle | Positions: 0/4
+2026-02-24 14:45:28 - INFO - [fyers_client] -    ...NIFTY spot price is 25377.75
+2026-02-24 14:45:28 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:45:28 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:45:28 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:45:28 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:45:28 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:45:29 - INFO - [fyers_client] -    ...NIFTY spot price is 25376.15
+2026-02-24 14:45:29 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:45:29 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:45:29 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:45:29 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:45:30 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:45:30 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@34.60 + SELL NSE:NIFTY26FEB25350PE@11.15
+2026-02-24 14:45:30 - INFO - [paper_trader] - --- SPREAD POSITION OPENED ---
+2026-02-24 14:45:30 - INFO - [paper_trader] -    Index SL: 25,641.80
+2026-02-24 14:45:30 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:45:30 - INFO - [paper_trader] - --- Active Positions: 1 ---
+2026-02-24 14:45:30 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:45:30 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:45:58 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 0: expected str instance, int found
+2026-02-24 14:45:58 - INFO - [root] - ==================================================
+2026-02-24 14:45:58 - INFO - [root] - [14:45:58] Analysis cycle | Positions: 1/4
+2026-02-24 14:45:58 - INFO - [fyers_client] -    ...NIFTY spot price is 25369.05
+2026-02-24 14:45:58 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:45:58 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:45:59 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:45:59 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:45:59 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:45:59 - INFO - [fyers_client] -    ...NIFTY spot price is 25366.55
+2026-02-24 14:45:59 - INFO - [fyers_client] -    ...Targeting strike price: 25300
+2026-02-24 14:45:59 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625300PE
+2026-02-24 14:46:00 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625300PE is invalid or not tradeable.
+2026-02-24 14:46:00 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25300PE
+2026-02-24 14:46:00 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25300PE
+2026-02-24 14:46:00 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25350PE@13.35 + SELL NSE:NIFTY26FEB25300PE@3.45
+2026-02-24 14:46:00 - INFO - [paper_trader] - --- SPREAD POSITION OPENED ---
+2026-02-24 14:46:00 - INFO - [paper_trader] -    Index SL: 25,641.80
+2026-02-24 14:46:00 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:46:00 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:46:00 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:46:00 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:46:00 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:46:28 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:46:28 - INFO - [root] - ==================================================
+2026-02-24 14:46:28 - INFO - [root] - [14:46:28] Analysis cycle | Positions: 2/4
+2026-02-24 14:46:28 - INFO - [fyers_client] -    ...NIFTY spot price is 25370.45
+2026-02-24 14:46:28 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:46:28 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:46:29 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:46:29 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:46:29 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:46:30 - INFO - [fyers_client] -    ...NIFTY spot price is 25373.15
+2026-02-24 14:46:30 - INFO - [fyers_client] -    ...Targeting strike price: 25300
+2026-02-24 14:46:30 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625300PE
+2026-02-24 14:46:30 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625300PE is invalid or not tradeable.
+2026-02-24 14:46:30 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25300PE
+2026-02-24 14:46:30 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25300PE
+2026-02-24 14:46:30 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25350PE@9.05 + SELL NSE:NIFTY26FEB25300PE@2.45
+2026-02-24 14:46:30 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25350PE. Spread order ignored.
+2026-02-24 14:46:30 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:46:30 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:46:30 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:46:30 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:46:30 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:46:58 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:46:58 - INFO - [root] - ==================================================
+2026-02-24 14:46:58 - INFO - [root] - [14:46:58] Analysis cycle | Positions: 2/4
+2026-02-24 14:46:58 - INFO - [fyers_client] -    ...NIFTY spot price is 25385.05
+2026-02-24 14:46:58 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:46:58 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:46:59 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:46:59 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:46:59 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:47:00 - INFO - [fyers_client] -    ...NIFTY spot price is 25382.85
+2026-02-24 14:47:00 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:47:00 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:47:00 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:47:00 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:47:01 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:47:01 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@25.95 + SELL NSE:NIFTY26FEB25350PE@6.80
+2026-02-24 14:47:01 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:47:01 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:47:01 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:47:01 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:47:01 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:47:01 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:47:29 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:47:29 - INFO - [root] - ==================================================
+2026-02-24 14:47:29 - INFO - [root] - [14:47:29] Analysis cycle | Positions: 2/4
+2026-02-24 14:47:29 - INFO - [fyers_client] -    ...NIFTY spot price is 25385.45
+2026-02-24 14:47:29 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:47:29 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:47:30 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:47:30 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:47:30 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:47:31 - INFO - [fyers_client] -    ...NIFTY spot price is 25384.75
+2026-02-24 14:47:31 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:47:31 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:47:31 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:47:31 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:47:32 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:47:32 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@25.95 + SELL NSE:NIFTY26FEB25350PE@7.00
+2026-02-24 14:47:32 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:47:32 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:47:32 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:47:32 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:47:32 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:47:32 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:47:59 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:47:59 - INFO - [root] - ==================================================
+2026-02-24 14:47:59 - INFO - [root] - [14:47:59] Analysis cycle | Positions: 2/4
+2026-02-24 14:47:59 - INFO - [fyers_client] -    ...NIFTY spot price is 25386.3
+2026-02-24 14:47:59 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:47:59 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:48:00 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:48:00 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:48:00 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:48:01 - INFO - [fyers_client] -    ...NIFTY spot price is 25385.65
+2026-02-24 14:48:01 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:48:01 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:48:01 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:48:01 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:48:02 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:48:02 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@23.70 + SELL NSE:NIFTY26FEB25350PE@6.45
+2026-02-24 14:48:02 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:48:02 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:48:02 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:48:02 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:48:02 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:48:02 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:48:29 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:48:29 - INFO - [root] - ==================================================
+2026-02-24 14:48:29 - INFO - [root] - [14:48:29] Analysis cycle | Positions: 2/4
+2026-02-24 14:48:29 - INFO - [fyers_client] -    ...NIFTY spot price is 25390.25
+2026-02-24 14:48:29 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:48:29 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:48:30 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:48:30 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:48:30 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:48:30 - INFO - [fyers_client] -    ...NIFTY spot price is 25388.3
+2026-02-24 14:48:30 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:48:30 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:48:31 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:48:31 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:48:31 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:48:31 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@25.00 + SELL NSE:NIFTY26FEB25350PE@6.50
+2026-02-24 14:48:31 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:48:31 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:48:31 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:48:31 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:48:31 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:48:31 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:48:59 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:48:59 - INFO - [root] - ==================================================
+2026-02-24 14:48:59 - INFO - [root] - [14:48:59] Analysis cycle | Positions: 2/4
+2026-02-24 14:48:59 - INFO - [fyers_client] -    ...NIFTY spot price is 25386.2
+2026-02-24 14:48:59 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:48:59 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:49:00 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:49:00 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:49:00 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:49:00 - INFO - [fyers_client] -    ...NIFTY spot price is 25384.95
+2026-02-24 14:49:00 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:49:00 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:49:01 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:49:01 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:49:01 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:49:01 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@27.65 + SELL NSE:NIFTY26FEB25350PE@7.50
+2026-02-24 14:49:01 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:49:01 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:49:01 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:49:01 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:49:01 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:49:01 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:49:29 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:49:29 - INFO - [root] - ==================================================
+2026-02-24 14:49:29 - INFO - [root] - [14:49:29] Analysis cycle | Positions: 2/4
+2026-02-24 14:49:29 - INFO - [fyers_client] -    ...NIFTY spot price is 25386.35
+2026-02-24 14:49:29 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:49:29 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:49:30 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:49:30 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:49:30 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:49:31 - INFO - [fyers_client] -    ...NIFTY spot price is 25386.2
+2026-02-24 14:49:31 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:49:31 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:49:31 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:49:31 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:49:31 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:49:31 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@29.10 + SELL NSE:NIFTY26FEB25350PE@7.65
+2026-02-24 14:49:31 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:49:31 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:49:31 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:49:31 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:49:31 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:49:31 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:50:00 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:50:00 - INFO - [root] - ==================================================
+2026-02-24 14:50:00 - INFO - [root] - [14:50:00] Analysis cycle | Positions: 2/4
+2026-02-24 14:50:00 - INFO - [fyers_client] -    ...NIFTY spot price is 25396.05
+2026-02-24 14:50:00 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:50:00 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:50:00 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:50:00 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:50:01 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:50:01 - INFO - [fyers_client] -    ...NIFTY spot price is 25397.95
+2026-02-24 14:50:01 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:50:01 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:50:02 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:50:02 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:50:02 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:50:02 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@17.70 + SELL NSE:NIFTY26FEB25350PE@3.60
+2026-02-24 14:50:02 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:50:02 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:50:02 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:50:02 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:50:02 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:50:02 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:50:30 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:50:30 - INFO - [root] - ==================================================
+2026-02-24 14:50:30 - INFO - [root] - [14:50:30] Analysis cycle | Positions: 2/4
+2026-02-24 14:50:31 - INFO - [fyers_client] -    ...NIFTY spot price is 25404
+2026-02-24 14:50:31 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:50:31 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:50:31 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:50:31 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:50:31 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:50:32 - INFO - [fyers_client] -    ...NIFTY spot price is 25405.85
+2026-02-24 14:50:32 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:50:32 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:50:32 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:50:32 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:50:32 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:50:32 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@12.75 + SELL NSE:NIFTY26FEB25350PE@2.35
+2026-02-24 14:50:32 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:50:32 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:50:32 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:50:32 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:50:32 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:50:32 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:51:00 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:51:00 - INFO - [root] - ==================================================
+2026-02-24 14:51:00 - INFO - [root] - [14:51:00] Analysis cycle | Positions: 2/4
+2026-02-24 14:51:01 - INFO - [fyers_client] -    ...NIFTY spot price is 25408.05
+2026-02-24 14:51:01 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:51:01 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:51:01 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:51:01 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:51:01 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:51:02 - INFO - [fyers_client] -    ...NIFTY spot price is 25411.05
+2026-02-24 14:51:02 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:51:02 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:51:02 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:51:02 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:51:02 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:51:02 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@10.90 + SELL NSE:NIFTY26FEB25350PE@2.10
+2026-02-24 14:51:02 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:51:02 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:51:02 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:51:02 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:51:02 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:51:02 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:51:30 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:51:30 - INFO - [root] - ==================================================
+2026-02-24 14:51:30 - INFO - [root] - [14:51:30] Analysis cycle | Positions: 2/4
+2026-02-24 14:51:31 - INFO - [fyers_client] -    ...NIFTY spot price is 25413.65
+2026-02-24 14:51:31 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:51:31 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:51:31 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:51:31 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:51:32 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:51:32 - INFO - [fyers_client] -    ...NIFTY spot price is 25415.55
+2026-02-24 14:51:32 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:51:32 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:51:32 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:51:32 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:51:33 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:51:33 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@11.00 + SELL NSE:NIFTY26FEB25350PE@2.45
+2026-02-24 14:51:33 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:51:33 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:51:33 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:51:33 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:51:33 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:51:33 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:52:01 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:52:01 - INFO - [root] - ==================================================
+2026-02-24 14:52:01 - INFO - [root] - [14:52:01] Analysis cycle | Positions: 2/4
+2026-02-24 14:52:01 - INFO - [fyers_client] -    ...NIFTY spot price is 25417.4
+2026-02-24 14:52:01 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:52:01 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:52:01 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:52:01 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:52:02 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:52:02 - INFO - [fyers_client] -    ...NIFTY spot price is 25418.5
+2026-02-24 14:52:02 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:52:02 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:52:02 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:52:02 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:52:03 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:52:03 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@10.15 + SELL NSE:NIFTY26FEB25350PE@2.45
+2026-02-24 14:52:03 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:52:03 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:52:03 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:52:03 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:52:03 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:52:03 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:52:31 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:52:31 - INFO - [root] - ==================================================
+2026-02-24 14:52:31 - INFO - [root] - [14:52:31] Analysis cycle | Positions: 2/4
+2026-02-24 14:52:32 - INFO - [fyers_client] -    ...NIFTY spot price is 25422.65
+2026-02-24 14:52:32 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:52:32 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:52:32 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:52:32 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:52:32 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:52:33 - INFO - [fyers_client] -    ...NIFTY spot price is 25421.05
+2026-02-24 14:52:33 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:52:33 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:52:33 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:52:33 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:52:33 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:52:33 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@9.40 + SELL NSE:NIFTY26FEB25350PE@2.55
+2026-02-24 14:52:33 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:52:33 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:52:33 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:52:33 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:52:33 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:52:33 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:53:01 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:53:01 - INFO - [root] - ==================================================
+2026-02-24 14:53:01 - INFO - [root] - [14:53:01] Analysis cycle | Positions: 2/4
+2026-02-24 14:53:02 - INFO - [fyers_client] -    ...NIFTY spot price is 25418.65
+2026-02-24 14:53:02 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:53:02 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:53:02 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:53:02 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:53:02 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:53:03 - INFO - [fyers_client] -    ...NIFTY spot price is 25417.9
+2026-02-24 14:53:03 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:53:03 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:53:03 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:53:03 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:53:03 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:53:03 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@10.95 + SELL NSE:NIFTY26FEB25350PE@2.55
+2026-02-24 14:53:03 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:53:03 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:53:03 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:53:03 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:53:03 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:53:03 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:53:31 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:53:31 - INFO - [root] - ==================================================
+2026-02-24 14:53:31 - INFO - [root] - [14:53:31] Analysis cycle | Positions: 2/4
+2026-02-24 14:53:32 - INFO - [fyers_client] -    ...NIFTY spot price is 25414.45
+2026-02-24 14:53:32 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:53:32 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:53:32 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:53:32 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:53:32 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:53:33 - INFO - [fyers_client] -    ...NIFTY spot price is 25413.15
+2026-02-24 14:53:33 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:53:33 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:53:33 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:53:33 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:53:33 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:53:33 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@11.70 + SELL NSE:NIFTY26FEB25350PE@2.45
+2026-02-24 14:53:33 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:53:33 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:53:33 - INFO - [paper_trader] - --- Active Positions: 2 ---
+2026-02-24 14:53:33 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:53:33 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:53:33 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:54:02 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:54:02 - INFO - [root] - ==================================================
+2026-02-24 14:54:02 - INFO - [root] - [14:54:02] Analysis cycle | Positions: 3/4
+2026-02-24 14:54:02 - INFO - [fyers_client] -    ...NIFTY spot price is 25406.1
+2026-02-24 14:54:02 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:54:02 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:54:02 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:54:02 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:54:03 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:54:03 - INFO - [fyers_client] -    ...NIFTY spot price is 25403.5
+2026-02-24 14:54:03 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:54:03 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:54:03 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:54:03 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:54:04 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:54:04 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@14.20 + SELL NSE:NIFTY26FEB25350PE@2.70
+2026-02-24 14:54:04 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:54:04 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:54:04 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:54:04 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:54:04 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:54:04 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:54:04 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:54:32 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:54:32 - INFO - [root] - ==================================================
+2026-02-24 14:54:32 - INFO - [root] - [14:54:32] Analysis cycle | Positions: 3/4
+2026-02-24 14:54:32 - INFO - [fyers_client] -    ...NIFTY spot price is 25415.75
+2026-02-24 14:54:32 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:54:32 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:54:33 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:54:33 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:54:33 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:54:34 - INFO - [fyers_client] -    ...NIFTY spot price is 25415.75
+2026-02-24 14:54:34 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:54:34 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:54:34 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:54:34 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:54:34 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:54:34 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@8.35 + SELL NSE:NIFTY26FEB25350PE@1.50
+2026-02-24 14:54:34 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:54:34 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:54:34 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:54:34 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:54:34 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:54:34 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:54:34 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:55:02 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:55:02 - INFO - [root] - ==================================================
+2026-02-24 14:55:02 - INFO - [root] - [14:55:02] Analysis cycle | Positions: 3/4
+2026-02-24 14:55:03 - INFO - [fyers_client] -    ...NIFTY spot price is 25414.05
+2026-02-24 14:55:03 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:55:03 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:55:03 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:55:03 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:55:03 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:55:04 - INFO - [fyers_client] -    ...NIFTY spot price is 25413.7
+2026-02-24 14:55:04 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:55:04 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:55:04 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:55:04 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:55:04 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:55:04 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@10.05 + SELL NSE:NIFTY26FEB25350PE@1.75
+2026-02-24 14:55:04 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:55:04 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:55:04 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:55:04 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:55:04 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:55:04 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:55:04 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:55:33 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:55:33 - INFO - [root] - ==================================================
+2026-02-24 14:55:33 - INFO - [root] - [14:55:33] Analysis cycle | Positions: 3/4
+2026-02-24 14:55:33 - INFO - [fyers_client] -    ...NIFTY spot price is 25416.6
+2026-02-24 14:55:33 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:55:33 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:55:33 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:55:33 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:55:34 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:55:34 - INFO - [fyers_client] -    ...NIFTY spot price is 25419.8
+2026-02-24 14:55:34 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:55:34 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:55:35 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:55:35 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:55:35 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:55:35 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@8.00 + SELL NSE:NIFTY26FEB25350PE@1.35
+2026-02-24 14:55:35 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:55:35 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:55:35 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:55:35 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:55:35 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:55:35 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:55:35 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:56:03 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:56:03 - INFO - [root] - ==================================================
+2026-02-24 14:56:03 - INFO - [root] - [14:56:03] Analysis cycle | Positions: 3/4
+2026-02-24 14:56:03 - INFO - [fyers_client] -    ...NIFTY spot price is 25413.05
+2026-02-24 14:56:03 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:56:03 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:56:03 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:56:04 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:56:04 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:56:04 - INFO - [fyers_client] -    ...NIFTY spot price is 25415.35
+2026-02-24 14:56:04 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:56:04 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:56:05 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:56:05 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:56:05 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:56:05 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@10.75 + SELL NSE:NIFTY26FEB25350PE@1.75
+2026-02-24 14:56:05 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:56:05 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:56:05 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:56:05 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:56:05 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:56:05 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:56:05 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:56:33 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:56:33 - INFO - [root] - ==================================================
+2026-02-24 14:56:33 - INFO - [root] - [14:56:33] Analysis cycle | Positions: 3/4
+2026-02-24 14:56:33 - INFO - [fyers_client] -    ...NIFTY spot price is 25418.8
+2026-02-24 14:56:33 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:56:33 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:56:34 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:56:34 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:56:34 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:56:34 - INFO - [fyers_client] -    ...NIFTY spot price is 25419.85
+2026-02-24 14:56:34 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:56:34 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:56:35 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:56:35 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:56:35 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:56:35 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@9.35 + SELL NSE:NIFTY26FEB25350PE@1.60
+2026-02-24 14:56:35 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:56:35 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:56:35 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:56:35 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:56:35 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:56:35 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:56:35 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:57:03 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:57:03 - INFO - [root] - ==================================================
+2026-02-24 14:57:03 - INFO - [root] - [14:57:03] Analysis cycle | Positions: 3/4
+2026-02-24 14:57:04 - INFO - [fyers_client] -    ...NIFTY spot price is 25423.3
+2026-02-24 14:57:04 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:57:04 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:57:04 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:57:04 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:57:04 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:57:05 - INFO - [fyers_client] -    ...NIFTY spot price is 25424.95
+2026-02-24 14:57:05 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:57:05 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:57:05 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:57:05 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:57:05 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:57:05 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@9.75 + SELL NSE:NIFTY26FEB25350PE@1.70
+2026-02-24 14:57:05 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:57:05 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:57:05 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:57:05 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:57:05 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:57:05 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:57:05 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:57:34 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:57:34 - INFO - [root] - ==================================================
+2026-02-24 14:57:34 - INFO - [root] - [14:57:34] Analysis cycle | Positions: 3/4
+2026-02-24 14:57:34 - INFO - [fyers_client] -    ...NIFTY spot price is 25421.8
+2026-02-24 14:57:34 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:57:34 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:57:34 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:57:34 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:57:35 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:57:35 - INFO - [fyers_client] -    ...NIFTY spot price is 25418.45
+2026-02-24 14:57:35 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:57:35 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:57:36 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:57:36 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:57:36 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:57:36 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@11.30 + SELL NSE:NIFTY26FEB25350PE@2.15
+2026-02-24 14:57:36 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:57:36 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:57:36 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:57:36 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:57:36 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:57:36 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:57:36 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:58:04 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:58:04 - INFO - [root] - ==================================================
+2026-02-24 14:58:04 - INFO - [root] - [14:58:04] Analysis cycle | Positions: 3/4
+2026-02-24 14:58:04 - INFO - [fyers_client] -    ...NIFTY spot price is 25419.45
+2026-02-24 14:58:04 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:58:04 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:58:05 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:58:05 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:58:05 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:58:05 - INFO - [fyers_client] -    ...NIFTY spot price is 25415.45
+2026-02-24 14:58:05 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:58:05 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:58:06 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:58:06 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:58:06 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:58:06 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@10.65 + SELL NSE:NIFTY26FEB25350PE@1.75
+2026-02-24 14:58:06 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:58:06 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:58:06 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:58:06 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:58:06 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:58:06 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:58:06 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:58:34 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 14:58:34 - INFO - [root] - ==================================================
+2026-02-24 14:58:34 - INFO - [root] - [14:58:34] Analysis cycle | Positions: 3/4
+2026-02-24 14:58:35 - INFO - [fyers_client] -    ...NIFTY spot price is 25421.55
+2026-02-24 14:58:35 - INFO - [fyers_client] -    ...Targeting strike price: 25400
+2026-02-24 14:58:35 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625400PE
+2026-02-24 14:58:35 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625400PE is invalid or not tradeable.
+2026-02-24 14:58:35 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25400PE
+2026-02-24 14:58:35 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25400PE
+2026-02-24 14:58:36 - INFO - [fyers_client] -    ...NIFTY spot price is 25421.7
+2026-02-24 14:58:36 - INFO - [fyers_client] -    ...Targeting strike price: 25350
+2026-02-24 14:58:36 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY2622625350PE
+2026-02-24 14:58:36 - WARNING - [fyers_client] -    ...Symbol NSE:NIFTY2622625350PE is invalid or not tradeable.
+2026-02-24 14:58:36 - INFO - [fyers_client] -    ...Testing constructed symbol: NSE:NIFTY26FEB25350PE
+2026-02-24 14:58:37 - INFO - [fyers_client] -    >>> SUCCESS: Valid symbol found: NSE:NIFTY26FEB25350PE
+2026-02-24 14:58:37 - INFO - [orb_scalper_strategy] - [ORB] Spread: BUY NSE:NIFTY26FEB25400PE@9.25 + SELL NSE:NIFTY26FEB25350PE@1.55
+2026-02-24 14:58:37 - WARNING - [paper_trader] - Already holding NSE:NIFTY26FEB25400PE. Spread order ignored.
+2026-02-24 14:58:37 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:58:37 - INFO - [paper_trader] - --- Active Positions: 3 ---
+2026-02-24 14:58:37 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:58:37 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:58:37 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:58:37 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:59:04 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 2: expected str instance, int found
+2026-02-24 14:59:04 - INFO - [root] - ==================================================
+2026-02-24 14:59:04 - INFO - [root] - [14:59:04] Analysis cycle | Positions: 4/4
+2026-02-24 14:59:04 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:59:04 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:59:04 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:59:04 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:59:04 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:59:04 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:59:04 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 18.55
+2026-02-24 14:59:04 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 14:59:35 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 2: expected str instance, int found
+2026-02-24 14:59:35 - INFO - [root] - ==================================================
+2026-02-24 14:59:35 - INFO - [root] - [14:59:35] Analysis cycle | Positions: 4/4
+2026-02-24 14:59:35 - INFO - [root] - Max positions reached. Monitoring only.
+2026-02-24 14:59:35 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 14:59:35 - INFO - [paper_trader] - --- Active Positions: 4 ---
+2026-02-24 14:59:35 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25400PE (Qty: 65) | Entry: 23.45
+2026-02-24 14:59:35 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25350PE (Qty: 65) | Entry: 9.90
+2026-02-24 14:59:35 - INFO - [paper_trader] -    OPEN: NSE:BANKNIFTY26FEB61100PE (Qty: 30) | Entry: 43.95
+2026-02-24 14:59:35 - INFO - [paper_trader] -    OPEN: NSE:NIFTY26FEB25450PE (Qty: 65) | Entry: 18.55
+2026-02-24 14:59:35 - INFO - [paper_trader] - No closed trades yet.
+2026-02-24 15:00:05 - ERROR - [root] - Error fetching live premiums for open positions: sequence item 1: expected str instance, int found
+2026-02-24 15:00:05 - INFO - [root] - ==================================================
+2026-02-24 15:00:05 - INFO - [root] - [15:00:05] Analysis cycle | Positions: 3/4
+2026-02-24 15:00:05 - WARNING - [root] - It is 15:00. Initiating EOD Auto-Square-Off.
+2026-02-24 15:00:05 - INFO - [paper_trader] - --- EOD_SQUARE_OFF: Closing 3 positions ---
+2026-02-24 15:00:05 - INFO - [paper_trader] -    ---> MARKET_EXIT TRIGGERED for spread NSE:NIFTY26FEB25400PE at Net Premium 3.80
+2026-02-24 15:00:05 - INFO - [paper_trader] - --- POSITION CLOSED ---
+2026-02-24 15:00:05 - INFO - [paper_trader] -    ---> MARKET_EXIT TRIGGERED for spread NSE:NIFTY26FEB25350PE at Net Premium 0.35
+2026-02-24 15:00:05 - INFO - [paper_trader] - --- POSITION CLOSED ---
+2026-02-24 15:00:05 - INFO - [paper_trader] -    ---> MARKET_EXIT TRIGGERED for spread NSE:BANKNIFTY26FEB61100PE at Net Premium 23.75
+2026-02-24 15:00:05 - INFO - [paper_trader] - --- POSITION CLOSED ---
+2026-02-24 15:00:05 - INFO - [root] - --- EOD Square-Off Complete. Exiting. ---
+2026-02-24 15:00:05 - INFO - [paper_trader] - --- Trading Summary ---
+2026-02-24 15:00:05 - INFO - [paper_trader] - --- No Active Positions ---
+2026-02-24 15:00:05 - INFO - [paper_trader] - Full trade log saved to trade_log.csv
+2026-02-24 15:00:05 - INFO - [paper_trader] - Total Closed Trades: 3
+2026-02-24 15:00:05 - INFO - [paper_trader] -    > Profitable:     0
+2026-02-24 15:00:05 - INFO - [paper_trader] -    > Unprofitable:   3
+2026-02-24 15:00:05 - INFO - [paper_trader] - Win Rate:            0.00%
+2026-02-24 15:00:05 - INFO - [paper_trader] - Profit Factor:       0.0
+2026-02-24 15:00:05 - WARNING - [fyers_client] - WebSocket Connection Closed: {'code': 200, 'message': 'Connection Closed', 's': 'ok'}
+2026-02-24 15:00:14 - INFO - [root] - WebSocket connection closed.

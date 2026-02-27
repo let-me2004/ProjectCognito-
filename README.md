@@ -1,101 +1,159 @@
-# CognitoTrader: An AI-Hybrid Algorithmic Trading Platform
+# ProjectCognito — Algorithmic Options & Equity Trading Bot
 
-CognitoTrader is a sophisticated, multi-agent algorithmic trading platform built from the ground up in Python. It is designed to analyze the Indian stock market, generate high-probability trading signals using a hybrid of quantitative, AI-driven, and machine learning techniques, and execute trades in a simulated environment. The platform features a modular architecture that supports multiple, distinct trading agents, each with its own unique strategy.
-
----
-
-## Core Features
-
-* **Multi-Agent Architecture:** The platform is designed to run multiple, independent trading agents simultaneously, each targeting a different market or strategy.
-* **Hybrid Intelligence:** Fuses traditional quantitative signals (technical indicators) with qualitative analysis from a Large Language Model (Google Gemini) and predictive insights from a custom-trained Machine Learning model.
-* **Live Data Integration:** Connects to live market data feeds via the Fyers API for real-time analysis and trade simulation.
-* **Robust Engineering:** Features a structured logging system for performance auditing, automated data pipeline sanitization, and a resilient main loop with error handling.
-* **Data-Driven Strategy Development:** Includes a full suite of tools for backtesting, data harvesting, feature engineering, and ML model optimization to allow for rigorous, data-driven strategy refinement.
+An automated trading system built in Python that trades **NIFTY** and **BANKNIFTY** index option spreads using the **Fyers API**. The bot detects intraday breakouts via the Opening Range Breakout (ORB) strategy, executes hedged debit spreads for defined-risk trades, and monitors positions with millisecond-precision exit logic — all powered by a real-time WebSocket data feed.
 
 ---
 
-## The Agents
+## 🚀 Key Features
 
-The platform currently supports three distinct, fully developed trading agents.
-
-### 1. The Options Agent (Protocol: "Weighted Confluence Breakout")
-
-This is a highly selective, low-frequency agent designed to trade NIFTY 50 index options. Its core principle is **confluence**, requiring multiple, independent signals to align before authorizing a trade.
-
-* **Strategy:** A trade is only executed if the following conditions are met:
-    1.  **NIFTY Regime:** The 45-minute trend of the NIFTY 50 index is aligned.
-    2.  **Sector Regime:** The 45-minute trend of the NIFTY BANK index (the most heavily weighted sector) is also aligned.
-    3.  **Breakout Trigger:** A 5-minute price breakout in the direction of the trend occurs.
-    4.  **Weighted Sentiment:** A custom-built sentiment engine, which analyzes news for the top 10 NIFTY 50 constituents and weights their sentiment scores by their index weightage, provides a confirming signal.
-    5.  **ML Prediction:** A custom-trained machine learning model predicts a favorable outcome over the next 30 minutes.
-* **Data Sources:** Fyers API (market data), YFinance (company-specific news), Google Gemini (sentiment analysis).
-
-### 2. The Equity Agent (Protocol: "Equity Surge")
-
-This is a medium-frequency, intraday momentum agent that scans the NIFTY 200 universe to find stocks experiencing a price and volume surge.
-
-* **Strategy:**
-    1.  **Quantitative Scan:** Every 15 minutes, the agent scans all 200 stocks for those with price change > 1.5% and volume > 500,000.
-    2.  **Sector Filter:** It then confirms that the parent sector of each surging stock is also in a confirmed uptrend.
-    3.  **Sentiment Filter:** Finally, it uses the LLM to analyze news sentiment for the specific stocks that passed both previous filters before executing a trade.
-* **Data Sources:** Fyers API (market data), YFinance (company-specific news), Google Gemini (sentiment analysis).
-
-### 3. The HFT Agent (Protocol: "Order Flow Imbalance")
-
-This is a high-frequency scalping agent designed to trade a single, highly liquid stock by analyzing its real-time order book.
-
-* **Strategy:** The agent connects to a tick-by-tick Level 2 data feed and continuously calculates the imbalance between buy and sell orders in the top 10 levels of the order book. It enters a trade when the imbalance ratio exceeds a predefined threshold (e.g., 30%) and exits when the imbalance neutralizes.
-* **Data Sources:** Fyers API (Level 2 Tick-by-Tick WebSocket).
+- **Live Fyers API Integration** — Authenticates via OAuth2, streams real-time tick data over WebSocket, and places multi-leg spread orders directly on NSE.
+- **Opening Range Breakout (ORB) Strategy** — Identifies the first 15-minute price range and triggers entries on confirmed breakouts.
+- **Hedged Debit Spreads** — Buys ATM options and sells OTM options simultaneously for defined-risk, capital-efficient trades (~₹36k–₹45k margin per spread).
+- **Dynamic Symbol Lookup** — Downloads and caches the Fyers Symbol Master CSV daily to resolve correct option symbols, handling exchange lot size changes and holiday-shifted expiries automatically.
+- **Live Margin Checks** — Queries your Fyers account balance in real-time before every trade to prevent over-leveraging.
+- **Millisecond Latency Tracking** — Measures exact round-trip API execution time for every entry, stop-loss, and take-profit order.
+- **Paper Trading Mode** — Full simulation environment with JSON-based position tracking, P&L calculation, and trade logging.
+- **Web Dashboard** — Real-time browser UI showing live positions, P&L, and market data with REST API fallback for quotes.
+- **EOD Auto Square-Off** — Automatically closes all open positions at 3:00 PM IST to avoid overnight risk.
 
 ---
 
-## Machine Learning Pipeline
+## 📊 Trading Strategies
 
-The platform includes a complete end-to-end pipeline for developing and deploying the predictive ML model used by the options agent.
+### ORB Debit Spread Scalper (`options_scalper_main.py`)
 
-1.  **Data Harvesting:** A chunked downloader script fetches **5 years** of 5-minute NIFTY 50 candle data (>96,000 data points) from the Fyers API.
-2.  **Feature Engineering:** A dedicated script processes the raw data, calculating **21 distinct features** (RSI, MACD, multiple EMAs, Bollinger Bands, ATR, etc.) and creating a target label to predict the price direction 30 minutes into the future.
-3.  **Model Training & Optimization:** The system uses a GPU-accelerated **LightGBM Classifier**. An optimization script (`model_optimizer.py`) uses `RandomizedSearchCV` to test dozens of hyperparameter combinations to find the optimal model configuration. The baseline model achieved a **51% accuracy** on over 19,000 unseen test samples.
+The primary strategy. Designed for capital-efficient, defined-risk intraday option trading.
 
----
+| Parameter | Value |
+|---|---|
+| Instruments | NIFTY 50, BANKNIFTY |
+| Entry Window | 9:15 AM – 11:15 AM IST |
+| ORB Period | First 15 minutes (3 × 5-min candles) |
+| Trade Type | Debit Spread (Buy ATM + Sell 1-strike OTM) |
+| Max Positions | 4 simultaneous spreads |
+| Risk Per Trade | 1% of account balance |
+| Profit Target | 15% of net debit |
+| Stop Loss | Index-based (ORB range invalidation) |
+| Margin Required | ~₹36,500 (Nifty) / ~₹42,500 (BankNifty) per spread |
 
-## Tech Stack
+**How it works:**
+1. Calculates the Opening Range (High/Low) from the first 15 minutes of trading.
+2. Waits for price to break above the ORB High (bullish) or below the ORB Low (bearish).
+3. On breakout, constructs a debit spread: buys ATM option + sells 1-strike OTM option.
+4. Monitors positions tick-by-tick for stop-loss (index reversal) and take-profit (spread value target).
+5. Auto squares-off all remaining positions at 3:00 PM.
 
-* **Core Language:** Python
-* **Data Manipulation:** Pandas, NumPy
-* **Machine Learning:** Scikit-learn, LightGBM, Joblib
-* **Technical Analysis:** Pandas-TA
-* **APIs & Data Sources:** Fyers API, Google Gemini API, YFinance, Requests
-* **Web Scraping:** BeautifulSoup4
-* **Version Control:** Git
+### Equity Surge Scanner (`equity_main.py`)
 
----
+Scans the NIFTY 200 universe for intraday momentum plays based on price change and volume surges.
 
-## Setup & Usage
+### HFT Order Flow Scalper (`hft_equity_main.py`)
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [your-repo-url]
-    cd ProjectCognito
-    ```
-2.  **Create and activate a virtual environment:**
-    ```bash
-    python -m venv venv
-    .\venv\Scripts\activate
-    ```
-3.  **Install dependencies:**
-    ```bash
-    python -m pip install -r requirements.txt
-    ```
-4.  **Configure API Keys:**
-    * Create a `.env` file in the root directory.
-    * Add your API keys: `FYERS_APP_ID`, `FYERS_SECRET_KEY`, `GOOGLE_API_KEY`, `NEWS_API_KEY`.
-5.  **Run an Agent:**
-    * To run the options agent: `python main.py`
-    * To run the equity agent: `python equity_main.py`
+A high-frequency scalping agent that analyzes Level 2 order book imbalances on liquid stocks.
 
 ---
 
-## Disclaimer
+## 🏗️ Architecture
 
-This project is for educational and research purposes only. The strategies and agents are not guaranteed to be profitable and are run in a simulated paper trading environment. Trading financial markets involves significant risk. Do not use this code for live trading without a thorough understanding of the risks involved.
+```
+ProjectCognito/
+├── options_scalper_main.py    # Main ORB spread scalper (primary bot)
+├── orb_scalper_strategy.py    # ORB breakout detection & spread construction
+├── fyers_client.py            # Fyers API wrapper (auth, orders, WebSocket, margin)
+├── paper_trader.py            # Paper trading engine with P&L tracking
+├── risk_manager.py            # Position sizing & risk rules
+├── web_dashboard.py           # Real-time web UI dashboard
+├── config.py                  # API keys & configuration (gitignored)
+├── equity_main.py             # Equity momentum scanner
+├── hft_equity_main.py         # HFT order book scalper
+├── orb_backtester.py          # ORB strategy backtester
+├── combined_backtester.py     # Multi-strategy backtester
+└── trade_log.csv              # Historical trade records
+```
+
+---
+
+## ⚙️ Setup
+
+### Prerequisites
+- Python 3.10+
+- A [Fyers](https://fyers.in) trading account with API access
+
+### Installation
+
+```bash
+git clone https://github.com/let-me2004/AI-Trading-Agent-.git
+cd AI-Trading-Agent-
+python -m venv venv
+.\venv\Scripts\activate      # Windows
+pip install -r requirements.txt
+```
+
+### Configuration
+
+Create a `config.py` file in the root directory:
+
+```python
+FYERS_APP_ID = "your_app_id"
+FYERS_SECRET_KEY = "your_secret_key"
+FYERS_REDIRECT_URI = "https://trade.fyers.in/api-login/redirect-uri/index.html"
+ACCOUNT_BALANCE = 200000.0    # Your trading capital in INR
+RISK_PERCENTAGE = 1.0         # Max risk per trade (%)
+```
+
+### Running
+
+```bash
+# Paper trading (default)
+python options_scalper_main.py
+
+# Web dashboard (run in a separate terminal)
+python web_dashboard.py
+```
+
+To enable live trading, set `LIVE_TRADING = True` in `options_scalper_main.py` (Line 29).
+
+---
+
+## 📈 Live Trading Safeguards
+
+The bot includes multiple layers of protection for live execution:
+
+1. **Margin Gate** — Queries Fyers `funds()` API before every trade. Blocks entry if available balance < required spread margin.
+2. **Position Limits** — Hard cap of 4 simultaneous positions to prevent over-exposure.
+3. **Risk Budget** — Each trade's max loss (net debit × lot size) must fit within 1% of account balance.
+4. **Latency Logging** — Every API call is timed to the millisecond, letting you monitor execution quality.
+5. **EOD Square-Off** — All positions auto-close at 3:00 PM to eliminate overnight risk.
+6. **NoneType Safety** — Gracefully handles Fyers API returning `None` on rejected orders without crashing.
+
+---
+
+## 📉 Performance
+
+The bot logs all trades to `trade_log.csv` with entry/exit timestamps, P&L, and position details for post-market analysis.
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+|---|---|
+| Language | Python 3.10+ |
+| Broker API | Fyers API v3 |
+| Data Feed | WebSocket (real-time ticks) |
+| Data Processing | Pandas, NumPy |
+| Technical Analysis | Pandas-TA |
+| Web Dashboard | Flask / HTML |
+| Version Control | Git |
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for **educational and research purposes only**. Trading financial derivatives involves significant risk of loss. The strategies implemented here are not guaranteed to be profitable. Do not deploy with real capital unless you fully understand the risks involved.
+
+---
+
+## 📜 License
+
+MIT License

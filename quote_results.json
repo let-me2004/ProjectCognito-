@@ -1,0 +1,117 @@
+{
+    "NSE:NIFTY26FEB25400PE": {
+        "message": "",
+        "code": 200,
+        "d": [
+            {
+                "n": "NSE:NIFTY26FEB25400PE",
+                "v": {
+                    "ask": 0.05,
+                    "bid": 0,
+                    "chp": -99.74,
+                    "ch": -19.4,
+                    "description": "NSE:NIFTY26FEB25400PE",
+                    "exchange": "NSE",
+                    "fyToken": "101126022464849",
+                    "high_price": 80.5,
+                    "low_price": 0.05,
+                    "lp": 0.05,
+                    "open_price": 17.2,
+                    "original_name": "NSE:NIFTY26FEB25400PE",
+                    "prev_close_price": 0.05,
+                    "short_name": "NIFTY26FEB25400PE",
+                    "spread": 0,
+                    "symbol": "NSE:NIFTY26FEB25400PE",
+                    "tt": "1771977600",
+                    "volume": 2725396375,
+                    "atp": 21.52
+                },
+                "s": "ok"
+            }
+        ],
+        "s": "ok"
+    },
+    "NSE:BANKNIFTY26FEB61100PE": {
+        "message": "",
+        "code": 200,
+        "d": [
+            {
+                "n": "NSE:BANKNIFTY26FEB61100PE",
+                "v": {
+                    "ask": 52.45,
+                    "bid": 52.2,
+                    "chp": -69.74,
+                    "ch": -120.3,
+                    "description": "NSE:BANKNIFTY26FEB61100PE",
+                    "exchange": "NSE",
+                    "fyToken": "101126022460272",
+                    "high_price": 333,
+                    "low_price": 15.05,
+                    "lp": 52.2,
+                    "open_price": 158.5,
+                    "original_name": "NSE:BANKNIFTY26FEB61100PE",
+                    "prev_close_price": 52.2,
+                    "short_name": "BANKNIFTY26FEB61100PE",
+                    "spread": 0.25,
+                    "symbol": "NSE:BANKNIFTY26FEB61100PE",
+                    "tt": "1771977600",
+                    "volume": 115661070,
+                    "atp": 99.04
+                },
+                "s": "ok"
+            }
+        ],
+        "s": "ok"
+    },
+    "NSE:BANKNIFTY2622661100PE": {
+        "message": "",
+        "code": 200,
+        "d": [
+            {
+                "n": "NSE:BANKNIFTY2622661100PE",
+                "v": {
+                    "n": "NSE:BANKNIFTY2622661100PE",
+                    "errmsg": "Please provide a valid symbol",
+                    "code": -300,
+                    "s": "error"
+                },
+                "s": "ok"
+            }
+        ],
+        "s": "ok"
+    },
+    "NSE:BANKNIFTY2622561100PE": {
+        "message": "",
+        "code": 200,
+        "d": [
+            {
+                "n": "NSE:BANKNIFTY2622561100PE",
+                "v": {
+                    "n": "NSE:BANKNIFTY2622561100PE",
+                    "errmsg": "Please provide a valid symbol",
+                    "code": -300,
+                    "s": "error"
+                },
+                "s": "ok"
+            }
+        ],
+        "s": "ok"
+    },
+    "NSE:BANKNIFTY26FEB2661100PE": {
+        "message": "",
+        "code": 200,
+        "d": [
+            {
+                "n": "NSE:BANKNIFTY26FEB2661100PE",
+                "v": {
+                    "n": "NSE:BANKNIFTY26FEB2661100PE",
+                    "errmsg": "Please provide a valid symbol",
+                    "code": -300,
+                    "s": "error"
+                },
+                "s": "ok"
+            }
+        ],
+        "s": "ok"
+    }
+}

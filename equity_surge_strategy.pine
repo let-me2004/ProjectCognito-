@@ -1,0 +1,61 @@
+//@version=5
+strategy("Equity Volume Surge Strategy", overlay=true, initial_capital=100000, currency=currency.INR)
+
+// --- Configuration ---
+minPriceChange = input.float(1.5, "Min Price Change (%)", minval=0.1, step=0.1)
+minVolumeSurge = input.float(2.0, "Min Volume Surge Factor", minval=1.0, step=0.1)
+avgVolumeLength = input.int(10, "Average Volume Length", minval=5)
+
+// --- Calculations ---
+// 1. Price Change % (Intraday: Close vs Prev Day Close)
+prevClose = request.security(syminfo.tickerid, "D", close[1])
+priceChangePct = ((close - prevClose) / prevClose) * 100
+
+// 2. Average Volume (10-Day Average)
+dailyVolume = request.security(syminfo.tickerid, "D", volume)
+avgVolume = ta.sma(dailyVolume, avgVolumeLength)
+
+// 3. Volume Surge Factor
+currentVolume = volume // Current bar volume (approximate for intraday, better on Daily timeframe)
+// For scanner-like behavior on intraday charts, we essentially want to see if today's *projected* or *current* volume is huge.
+// However, the python script compares 'current_volume' (accumulated today) vs '10-day avg daily volume'.
+// On TradingView, 'volume' is per bar. We need today's cumulative volume.
+todayVolume = request.security(syminfo.tickerid, "D", volume)
+volumeFactor = todayVolume / avgVolume
+
+// --- Strategy Logic ---
+longCondition = priceChangePct > minPriceChange and volumeFactor > minVolumeSurge
+
+// --- Plotting & Execution ---
+plot(avgVolume, "Avg Volume (Daily)", color=color.gray, display=display.data_window)
+plot(todayVolume, "Today Volume", color=color.blue, display=display.data_window)
+plot(volumeFactor, "Volume Factor", color=color.purple, display=display.data_window)
+
+// Highlight bars where condition is met
+bgcolor(longCondition ? color.new(color.green, 90) : na)
+
+// --- Exit Parameters ---
+atrLength = input.int(14, "ATR Length")
+atrMultiplier = input.float(1.5, "Stop Loss ATR Multiplier")
+riskReward = input.float(2.0, "Take Profit Risk:Reward (Optional)")
+sessionEnd = input.session("1500-1530", "EOD Exit Session") // For intraday square-off
+
+// --- Exit Calculations (ATR) ---
+atr = ta.atr(atrLength)
+stopLossLevel = strategy.position_avg_price - (atr * atrMultiplier)
+takeProfitLevel = strategy.position_avg_price + ((atr * atrMultiplier) * riskReward)
+
+// --- Execution ---
+if (longCondition)
+    strategy.entry("Surge Buy", strategy.long)
+
+// 1. Fixed ATR Stop Loss & Take Profit
+if (strategy.position_size > 0)
+    strategy.exit("Exit", "Surge Buy", stop=stopLossLevel, limit=takeProfitLevel)
+
+// 2. EOD Time-based Exit
+// We check if the current bar time is within the exit session or past 15:00
+// Note: TradingView time logic can be tricky. A simple specific time checks works best for intraday.
+isEOD = hour(time) == 15 and minute(time) >= 0
+if (isEOD)
+    strategy.close_all("EOD Close")

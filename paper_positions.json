@@ -1,0 +1,50 @@
+{
+    "NSE:BANKBARODA-EQ": {
+        "id": 1771319509,
+        "qty": 147,
+        "direction": "LONG",
+        "entry_time": "2026-02-17T14:41:49.580941",
+        "sim_entry_price": 303.45,
+        "sim_stop_loss_price": 289.875,
+        "sim_take_profit_price": 0,
+        "index_entry_price": 303.45,
+        "index_stop_loss_price": 289.875,
+        "index_take_profit_price": 0
+    },
+    "NSE:PNB-EQ": {
+        "id": 1771319509,
+        "qty": 394,
+        "direction": "LONG",
+        "entry_time": "2026-02-17T14:41:49.958561",
+        "sim_entry_price": 124.68,
+        "sim_stop_loss_price": 119.60464285714286,
+        "sim_take_profit_price": 0,
+        "index_entry_price": 124.68,
+        "index_stop_loss_price": 119.60464285714286,
+        "index_take_profit_price": 0
+    },
+    "NSE:UNIONBANK-EQ": {
+        "id": 1771319510,
+        "qty": 212,
+        "direction": "LONG",
+        "entry_time": "2026-02-17T14:41:50.320764",
+        "sim_entry_price": 188.68,
+        "sim_stop_loss_price": 179.28464285714287,
+        "sim_take_profit_price": 0,
+        "index_entry_price": 188.68,
+        "index_stop_loss_price": 179.28464285714287,
+        "index_take_profit_price": 0
+    },
+    "NSE:M&MFIN-EQ": {
+        "id": 1771321261,
+        "qty": 80,
+        "direction": "LONG",
+        "entry_time": "2026-02-17T15:11:01.707748",
+        "sim_entry_price": 384.8,
+        "sim_stop_loss_price": 359.9321428571429,
+        "sim_take_profit_price": 0,
+        "index_entry_price": 384.8,
+        "index_stop_loss_price": 359.9321428571429,
+        "index_take_profit_price": 0
+    }
+}
